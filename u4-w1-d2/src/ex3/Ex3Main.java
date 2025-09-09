@@ -1,6 +1,7 @@
 package ex3;
 
-import java.util.Arrays;
+// import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class Ex3Main {
@@ -19,15 +20,18 @@ public class Ex3Main {
             if (parola.equals(":q")) {
                 break;
             } else {
-                // System.out.println(String.join("," , parola.split("")) ----------> Caso alternativo
-                for (int i = 0; i < parola.length(); i++) {
+                System.out.println(String.join(",", parola.split("")));
+                /*for (int i = 0; i < parola.length(); i++) {
                     System.out.print(parola.charAt(i));
-                    if (i < parola.length() - 1) {
+                  if (i < parola.length() - 1) {
                         System.out.print(",");
                     }
-                }
+                */
             }
+
+            scanner.close();
         }
-        scanner.close();
     }
+
 }
+
