@@ -7,7 +7,7 @@ public class Ex3Main {
     public static void main(String[] args) {
 
         // 3.1
-        System.out.println("Inserisci una parola e ti separo ogni carattera da una virgola: ");
+        System.out.println("Inserisci una parola e ti separo ogni carattera da una virgola (inserire ':q' se si vuole uscire): ");
         dividedString();
 
     }
@@ -16,7 +16,7 @@ public class Ex3Main {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             String parola = scanner.nextLine();
-            if (parola.equals("q")) {
+            if (parola.equals(":q")) {
                 break;
             } else {
                 // System.out.println(String.join("," , parola.split("")) ----------> Caso alternativo
